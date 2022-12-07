@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+}
+\emergencystretch=1em       % I don't know what this does, but it fixes hbox things
+\usepackage{graphicx}		
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage[style=apa]{biblatex}
+\addbibresource{export.bib} 	% bibliography file from root directory
+\usepackage{lipsum}
+
+\begin{document}
+\include{titlepage.tex}
+\pagebreak
+\tableofcontents
+\listoftables
+\listoffigures
+
+\pagebreak
+% Placeholder text 
+\section{Introduction}
+I want to reference the source \cite{Alamerie2014}.
+\lipsum[10]
+
+\section{Methodology}
+\lipsum[50] 
+I am citing \cite{Giller2021}
+
+\section{Results}
+\lipsum[50]
+Citing \cite{Pant2016}. Citing \cite{Russel2012}
+
+\section{Conclusion}
+\lipsum[20]
+% End of placeholder text
+
+\printbibliography
+
+\end{document}
